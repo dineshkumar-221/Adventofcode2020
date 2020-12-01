@@ -7,8 +7,8 @@ public static void main(String args[]) {
 		a[i]=sc.nextInt();
 	}
 //puzzle-1
-	for(int i=0;i<200;i++){
-		for (int j=i+1;j<200 ;j++ ) {
+	for(int i=0;i<a.size();i++){
+		for (int j=i+1;j<a.size() ;j++ ) {
 			if((a[i]+a[j])==2020){
 				x=a[i];y=a[j];
 				break;
@@ -17,9 +17,9 @@ public static void main(String args[]) {
 	}
 System.out.println(x*y);
 //puzzle-2
-	for(int i=0;i<200;i++){
-		for (int j=i+1;j<200 ;j++ ) {
-			for (int k=j+1;k<200 ;k++ ) {
+	for(int i=0;i<a.size();i++){
+		for (int j=i+1;j<a.size() ;j++ ) {
+			for (int k=j+1;k<a.size() ;k++ ) {
 				if((a[i]+a[j]+a[k])==2020){
 					x=a[i];y=a[j];z=a[k];
 					break;
